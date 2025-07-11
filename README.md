@@ -1,2 +1,2 @@
 # Devbox
-Devbox Customizatiomns
+Devbox Customizations
