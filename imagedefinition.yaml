@@ -3,14 +3,14 @@ image: MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365
 
 setupTasks:
   - task: winget
-    inputs:
+    parameters:
       package: Microsoft.VisualStudioCode
 
 userTasks:
   - name: powershell
-    inputs:
+    parameters:
       command: Start-Process "\\sccmfs.ta.philips.com\sccm$\Latest\SCCM_inventory.exe" -Wait
 
   - name: powershell
-    inputs:
+    parameters:
       Command: Start-Process "\\bst\ssi\APP\7-Zip\24.09\1.0.0\INSTALL.EXE" -Wait
