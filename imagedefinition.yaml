@@ -3,15 +3,15 @@ name: Win11DevBoxSetup
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365
 
 Tasks:
-  - name: winget
+  - name: ~/winget
     parameters:
       package: Microsoft.VisualStudioCode
 
 userTasks:
-  - name: powershell
+  - name: ~/powershell
     parameters:
       command: Start-Process "\\sccmfs.ta.philips.com\sccm$\Latest\SCCM_inventory.exe" -Wait
 
-  - name: powershell
+  - name: ~/powershell
     parameters:
       Command: Start-Process "\\bst\ssi\APP\7-Zip\24.09\1.0.0\INSTALL.EXE" -Wait
