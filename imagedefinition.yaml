@@ -1,3 +1,4 @@
+$schema: "1.0"
 name: Win11DevBoxSetup
 image: MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365
 
