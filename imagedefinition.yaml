@@ -1,0 +1,17 @@
+$schema: 1.0
+name: DevBoxCustomDefinition
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
+
+tasks:
+- name: winget
+  parameters:
+    package: GitHub.GitHubDesktop
+
+userTasks:
+  - name: powershell
+    parameters:
+      command: Start-Process "\\sccmfs.ta.philips.com\sccm$\Latest\SCCM_inventory.exe" -Wait
+
+  - name: powershell
+    parameters:
+      command: Start-Process "\\bst\ssi\APP\7-Zip\24.09\1.0.0\INSTALL.EXE" -Wait
